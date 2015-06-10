@@ -1,0 +1,21 @@
+{
+    "maxerr": 50,
+    "boss": true,
+    "camelcase": true,
+    "curly": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "expr": true,
+    "immed": true,
+    "maxlen": 120,
+    "noarg": true,
+    "undef": true,
+    "unused": true,
+    "browser": true,
+    "devel": true,
+    "node": true,
+    "globals": {
+        "define": true,
+        "noGlobal": true
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Polderknowledge-Boilerplate",
+  "version": "0.0.3",
+  "description": "Polderknowledge Boilerplate",
+  "main": "index.js",
+  "author": "Yassine Elouazzani <yassine@polderknowledge.nl>",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "flexible-gruntfile": "git+ssh://git@git.redknot.nl:polderknowledge/flexible-gruntfile.git#v0.0.2"
+  },
+  "scripts": {
+    "postinstall": "bower install"
+  }
+}

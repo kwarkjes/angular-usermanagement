@@ -1,0 +1,21 @@
+{
+  "name": "Polderknowledge-Boilerplate",
+  "version": "0.0.0",
+  "authors": [
+    "Yassine Elouazzani <yassine@youngguns.nl>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
