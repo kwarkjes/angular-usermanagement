@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="column">
+        <table calss="full-width border-collapse">
+            <thead>
+                <tr>
+                    <td>Avatar</td>
+                    <td>Voornaam</td>
+                    <td>Achternaam</td>
+                    <td>Email</td>
+                    <td class="text-center"><i class="fa fa-2x fa-eye"></i></td>
+                    <td class="text-center"><i class="fa fa-2x fa-edit"></i></td>
+                    <td class="text-center"><i class="fa fa-2x fa-trash"></i></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in users">
+                    <td class="small-1"><img ng-src="{{ getAvatar(user.avatar, user.email) }}" /></td>
+                    <td>{{user.firstname}}</td>
+                    <td>{{user.lastname}}</td>
+                    <td>{{user.email}}</td>
+                    <td class="small-1">
+                        <a class="button tiny expand" href="#user/view/{{ user._id }}"><i class="fa fa-2x fa-eye"></i></a>
+                    </td>
+                    <td class="small-1">
+                        <a class="button tiny success expand" href="#user/edit/{{ user._id }}"><i class="fa fa-2x fa-edit"></i></a>
+                    </td>
+                    <td class="small-1">
+                        <a class="button alert tiny expand" ng-click="deleteUser($event, user._id, $index);" href="#"><i class="fa fa-2x fa-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

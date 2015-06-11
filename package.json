@@ -1,7 +1,7 @@
 {
-  "name": "Polderknowledge-Boilerplate",
+  "name": "Polderknowledge-Users-AngularJS",
   "version": "0.0.3",
-  "description": "Polderknowledge Boilerplate",
+  "description": "Polderknowledge Users app written in Angular",
   "main": "index.js",
   "author": "Yassine Elouazzani <yassine@polderknowledge.nl>",
   "license": "ISC",

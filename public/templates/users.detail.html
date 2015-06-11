@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="column small-4">
+        <img ng-src="{{ user.avatar }}" />
+    </div>
+    <div class="column small-8">
+        <h1>{{ user.firstname }} {{ user.lastname }}</h1>
+        <div class="panel">
+            <p><strong>Leeftijd</strong>: {{ user.age }}</p>
+            <p><strong>Email</strong>: <a href="mailto:{{ user.email }}">{{ user.email }}</a></p>
+            <p><strong>Status</strong>: <span class="label {{ user.active ? 'success' : 'alert' }}">{{ user.active ? 'Actief' : 'Inactief' }}</span></p>
+        </div>
+        <div class="yg-panel primary">
+            <div class="yg-panel-heading"><i class="fa fa-child"></i> Werkdagen</div>
+            <ul class="small-block-grid-5">
+                  <li><span class="pk-badge medium {{ user.workingDays[0] ? 'success' : 'alert' }}">Maandag</span></li>
+                  <li><span class="pk-badge medium {{ user.workingDays[1] ? 'success' : 'alert' }}">Dinsdag</span></li>
+                  <li><span class="pk-badge medium {{ user.workingDays[2] ? 'success' : 'alert' }}">Woensdag</span></li>
+                  <li><span class="pk-badge medium {{ user.workingDays[3] ? 'success' : 'alert' }}">Donderdag</span></li>
+                  <li><span class="pk-badge medium {{ user.workingDays[4] ? 'success' : 'alert' }}">Vrijdag</span></li>
+            </ul>
+        </div>
+    </div>
+</div>

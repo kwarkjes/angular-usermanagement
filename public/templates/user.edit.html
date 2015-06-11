@@ -1,0 +1,75 @@
+<form ng-submit="sendPost()">
+    <div class="row">
+        <div class="column">
+            <div class="row">
+                <div class="small-4 columns">
+                    <label class="right inline">Voornaam</label>
+                </div>
+                <div class="small-7 columns">
+                    <input type="text" ng-model="user.firstname" required/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 columns">
+                    <label class="right inline">Achternaam</label>
+                </div>
+                <div class="small-7 columns">
+                    <input type="text" ng-model="user.lastname" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 columns">
+                    <label class="right inline">Leeftijd</label>
+                </div>
+                <div class="small-7 columns">
+                    <input type="number" ng-model="user.age" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 columns">
+                    <label class="right inline">Email</label>
+                </div>
+                <div class="small-7 columns">
+                    <input type="email" ng-model="user.email" required/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-7 small-offset-4 columns">
+                    <input class="styled-input" id="isActive" type="checkbox" ng-model="user.active" value="true"/>
+                    <label class="inline" for="isActive">Actief</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-7 small-offset-4 columns">
+                    <div class="row">
+                        <div class="column small-2">
+                            <input class="styled-input" id="workingDays_0" ng-model="user.workingDays[0]" value="true" type="checkbox" />
+                            <label class="inline" for="workingDays_0">Ma</label>
+                        </div>
+                        <div class="column small-2">
+                            <input class="styled-input" id="workingDays_1" ng-model="user.workingDays[1]" value="true" type="checkbox" />
+                            <label class="inline" for="workingDays_1">Di</label>
+                        </div>
+                      <div class="column small-2">
+                            <input class="styled-input" id="workingDays_2" ng-model="user.workingDays[2]" value="true" type="checkbox" />
+                            <label class="inline" for="workingDays_2">Di</label>
+                        </div>
+                        <div class="column small-2">
+                            <input class="styled-input" id="workingDays_3" ng-model="user.workingDays[3]" value="true" type="checkbox" />
+                            <label class="inline" for="workingDays_3">Do</label>
+                        </div>
+                        <div class="column small-4">
+                            <input class="styled-input" id="workingDays_4" ng-model="user.workingDays[4]" value="true" type="checkbox" />
+                            <label class="inline" for="workingDays_4">vr</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-7 small-offset-4 columns">
+                    <button type="submit">Opslaan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

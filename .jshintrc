@@ -16,6 +16,9 @@
     "node": true,
     "globals": {
         "define": true,
-        "noGlobal": true
+        "noGlobal": true,
+        "$": false,
+        "angular": false,
+        "md5": false
     }
 }

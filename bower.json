@@ -1,6 +1,6 @@
 {
-  "name": "Polderknowledge-Boilerplate",
-  "version": "0.0.0",
+  "name": "Polderknowledge-Users-AngularJS",
+  "version": "1.0.0",
   "authors": [
     "Yassine Elouazzani <yassine@youngguns.nl>"
   ],
@@ -16,6 +16,12 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "youngguns-assets": "git@git.youngguns.nl:youngguns/assets.git#losse_modules",
+    "angular": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "md5": "~0.3.0",
+    "angular-animate": "~1.4.0"
   }
 }
